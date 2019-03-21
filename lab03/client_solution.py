@@ -1,6 +1,5 @@
 # Lab03
-# 117303363
-# Colin Kelleher
+
 
 # sys is imported to be able to take in command line arguments
 import sys
