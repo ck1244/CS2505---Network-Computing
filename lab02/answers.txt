@@ -1,0 +1,17 @@
+Colin Kelleher - 117303363
+Lab02
+
+A. What happens now when you run your client?
+	>> The client runs as normal, but connects to the inputted hostname (i.e.: the other students machine)
+
+B. Has the log file to which your server writes changed? Why?
+	>> No the logfile to which the server writes to doesn't change, just because the server is running on a different machine, doesn't affect the logfile, the formatting etc is done from the server program itself, so isn't affected by which machine it is running on
+
+C. Has the log file changed on the other student’s machine? Why?
+	>>The name of the client machine changes when writing to the logfile on the other students machine, as the hostname has been updated, but other than that there isn't any other changes
+
+D. Is it possible for a third person to join the Chat? Try it.
+	>>Yes it would be possible for a third person to join the chat if the code was modified slightly
+
+E. Why do we need the Client to keep running?
+	>> We need to keep the client running, so it simulates a chat (eg:  Facebook Messenger), if the client terminated after each message, this would not be a chat, it order to keep it flowing, we need the client to keep running, otherwise the client would need to be re-run after each message from the server
