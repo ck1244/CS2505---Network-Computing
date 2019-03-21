@@ -1,5 +1,5 @@
 Lab03
-117303363 - Colin Kelleher
+
            
 *** Problem1: Taking the inputs from the command line
 
