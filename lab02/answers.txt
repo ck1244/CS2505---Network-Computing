@@ -1,5 +1,4 @@
-Colin Kelleher - 117303363
-Lab02
+Lab02 - CS2505
 
 A. What happens now when you run your client?
 	>> The client runs as normal, but connects to the inputted hostname (i.e.: the other students machine)
