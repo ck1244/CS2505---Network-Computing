@@ -1,5 +1,4 @@
 #Lab02
-#Colin Kelleher (117303363)
 
 # from the socket module import all
 from socket import *
