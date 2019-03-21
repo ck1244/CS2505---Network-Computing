@@ -1,0 +1,97 @@
+Lab03
+117303363 - Colin Kelleher
+           
+*** Problem1: Taking the inputs from the command line
+
+	I was unsure how to do this when i read the assignment, i knew it was something that 
+	could be completed, but i didn't know the Python code to complete it
+	I began by importing the 'sys' module, which allows us to use commands to access
+	arguments entered in the command line
+	
+
+*** Problem2: Formatting the HTML when printing to terminal from Client
+
+	When i printed * print('%s % data) * the formatting in the terminal was wrong, as follows:
+		connecting to server at localhost port 6789
+		HTTP/1.1 200 OK
+
+
+		<!
+		DO
+		C
+		T
+		YP
+		E
+	 
+		h
+		t
+		m
+		l
+ 
+		PUBLIC 
+		"-
+		//
+		IET
+		F
+		//
+		DT
+		D HTML
+		2.
+		0
+		/
+		/E
+		N">
+		
+	I played with different options of printing, for example * print(data) *
+	I eventually found I used pythons print() paramenter end, Python print() function ends 
+	with a newline by default
+	by adding in * end=' ' * which stops Python print() function automatically printing a
+	new line, which improved the output to:
+	
+	Colins-MacBook-Pro:lab03 colinkelleher$ python3 client.py localhost 6789 HelloWorld.html 
+	
+	connecting to server at localhost port 6789
+	HTTP/1.1 200 OK
+
+	<!DOCTYPE html PUBLIC "-//IETF//DTD HTML 2.0//EN">
+	<HTML>
+   		<HEAD>
+      		<TITLE>
+         		A Small Hello 
+      		</TITLE>
+   		</HEAD>
+	<BODY>
+   		<H1>Hi</H1>
+   		<P>This is very minimal "hello world" HTML document.</P> 
+	</BODY>
+	</HTML>
+	
+	
+*** Steps taken to design this lab
+	
+	1 - Downloaded WebServer.py & HelloWorld.html
+	2 - Create a file called client_solution.py
+		1 - Import Sys to be able to take command line inputs
+		2 - Import socket to be able to use socket for lab
+		3 - create a sever socket
+		4 - Take in arguments from command line and assign them to variables
+			1 - Look up how to take in arguments from command line in Python
+		5 - Ensure arguments are in the order: client.py 1)server_host 2)server_port 3)filename
+		6 - Create a server address using host and port
+			1 - server_address (host, port)
+			2 - port needs to be cast to an integer
+		7 - Print message to screen showing server and port we are connecting to
+		8 - Connect to the address as given above
+		9 - HTTP GET Request - """GET /FILENAME HTTP/1.1 """
+		10 - Encode and send
+		11 - Look for response
+		12 - Receive data and decode
+		13 - Print webpage HTML
+		14 - Write exception
+		15 - Close Connection
+	3 - Rename WebServer.py to WebServer_solution.py
+	4 - Upload and submit WebServer_solution.py & client_solution.py
+	
+
+	
+	
